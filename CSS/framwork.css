@@ -1,0 +1,85 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --gray-color: #888;
+}
+/* Box */
+.d-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+/* Padding */
+.p-0 {
+    padding: 0;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
+    padding: 20px;
+}
+/* Margin */
+.mt-0 {
+    margin-top: 0;
+}
+.m-20 {
+    margin: 20px;
+}
+/* Color */
+.bg-white {
+    background-color: #fff;
+}
+.c-black {
+    color: #000;
+}
+/* Position */
+.relative {
+    position: relative;
+}
+/* Text Align */
+.txt-c {
+    text-align: center;
+}
+/* Fonts */
+.fs-14 {
+    font-size: 14px;
+}
+/* Border */
+.b-1 {
+    border: 1px solid #ccc;
+}
+.rad-6 {
+    border-radius: 6px;
+}
+.rad-10 {
+    border-radius: 10px;
+}
+/* Media Mobile */
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+/* Width */
+.w-full {
+    width: 100%;
+}
+/* Components */
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Hight */
+/* Hide */
+.hidden {
+    overflow: hidden;
+}
