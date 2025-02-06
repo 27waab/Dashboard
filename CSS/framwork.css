@@ -13,6 +13,18 @@
 .align-center {
     align-items: center;
 }
+.space-between {
+    justify-content: space-between;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+.d-block {
+    display: block;
+}
 /* Padding */
 .p-0 {
     padding: 0;
@@ -27,18 +39,72 @@
     padding: 20px;
 }
 /* Margin */
+.m-0 {
+    margin: 0;
+}
 .mt-0 {
     margin-top: 0;
 }
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
 .m-20 {
     margin: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
+} 
+.mr-20 {
+    margin-right: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
 }
 /* Color */
 .bg-white {
     background-color: #fff;
 }
+.bg-eee {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
+.bg-green {
+    background-color: var(--green-color);
+}
+.bg-orange {
+    background-color: var(--orange-color);
+}
+.bg-red {
+    background-color: var(--red-color);
+}
+.c-white {
+    color: #fff;
+}
 .c-black {
     color: #000;
+}
+.c-grey {
+    color: var(--gray-color);
+}
+.c-blue {
+    color: var(--blue-color);
+}
+.c-green {
+    color: var(--green-color);
+}
+.c-red {
+    color: var(--red-color);
+}
+.c-orange {
+    color: var(--orange-color);
 }
 /* Position */
 .relative {
@@ -49,10 +115,22 @@
     text-align: center;
 }
 /* Fonts */
+.f-family {
+    font-family: "Open Sans", "Poppins", sans-serif;
+}
 .fs-14 {
     font-size: 14px;
 }
+.fs-15 {
+    font-size: 15px;
+}
+.fw-bold {
+    font-weight: bold;
+}
 /* Border */
+.b-none {
+    border: none;
+}
 .b-1 {
     border: 1px solid #ccc;
 }
@@ -67,16 +145,34 @@
     .hide-mobile {
         display: none;
     }
+    .txt-c-mobile {
+        text-align: center;
+    }
+    .block-mobile {
+        display: block;
+    }
 }
 /* Width */
 .w-full {
     width: 100%;
+}
+.w-fit {
+    width: fit-content;
 }
 /* Components */
 .between-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Hight */
 /* Hide */
