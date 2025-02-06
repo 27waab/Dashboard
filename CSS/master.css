@@ -27,10 +27,27 @@ ul {
     padding: 0;
     list-style: none;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-alt-color);
+}
 /* Start Sidebar */
 .sidebar {
     width: 250px;
+    height: 100%;
     box-shadow: 0 0 10px #ddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
 .sidebar > h3 {
     margin-bottom: 50px
@@ -83,6 +100,15 @@ ul {
 }
 /* Start Content Head */
 .content {
+    margin-left: 250px;
+}
+.head {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - 250px);
+    border-bottom: 1px solid #ddd;
+    z-index: 99;
 }
 .head .search::before {
     font-family: "Font Awesome 6 Free";
@@ -106,7 +132,7 @@ ul {
     transition: 0.3s;
 }
 .head .search input:focus {
-    width: 200px;
+    width: 180px;
     border-color: var(--blue-color);
 }
 .head .search input:focus::placeholder {
@@ -139,4 +165,158 @@ ul {
     height: 32px;
     margin-left: 15px;
     border-radius: 50%;
+}
+.page {
+    margin-top: 72px;
+}
+.page h1 {
+    margin: 20px 20px 40px;
+}
+.page h1::before,
+.page h1::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.page h1::before {
+    background-color: #fff;
+    width: 200px;
+}
+.page h1::after {
+    background-color: #000;
+    width: 75px;
+}
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+    .content {
+        margin-left: 62px;
+    }
+    .head {
+        width: calc(100% - 62px);
+    }
+    .wrapper {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+/* Welcome widget */
+.welcome {
+    overflow: hidden;
+}
+.welcome .intro img {
+    width: 200px;
+    margin-bottom: -10px;
+}
+.welcome .avatar {
+    width: 64px;
+    height: 64px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 0 5px #ddd;
+    margin-left: 20px;
+    margin-top: -32px;
+}
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.welcome .body > div {
+    flex: 1;
+}
+.welcome .visit {
+    margin: 0 15px 15px auto;
+    transition: 0.3s;
+}
+.welcome .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+@media (max-width: 767px) {
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+    .welcome .avatar {
+        margin-left: 0;
+    }
+    .welcome .body > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.qick-draft textarea {
+    resize: none;
+    min-height: 180px;
+}
+.qick-draft .save {
+    margin-left: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.qick-draft .save:hover {
+    background-color: var(--blue-alt-color);
+}
+.targets-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.targets-row .details {
+    flex: 1;
+}
+.targets-row .details .progress {
+    height: 6px;
+    border-radius: 9999999px;
+}
+.targets-row .details .progress > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-top-left-radius: 999999px;
+    border-bottom-left-radius: 999999px;
+}
+.targets-row .details .progress > span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+.targets-row .details .progress > span span::after {
+    content: "";
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.targets-row .details .progress > .blue span::after {
+    border-top-color: var(--blue-color);
+}
+.targets-row .details .progress > .orange span::after {
+    border-top-color: var(--orange-color);
+}
+.targets-row .details .progress > .green span::after {
+    border-top-color: var(--green-color);
+}
+.blue .icon,
+.blue .progress {
+    background-color: rgb(0 117 255 / 20%);
+}
+.orange .icon,
+.orange .progress {
+    background-color: rgb(245 158 11 / 20%);
+}
+.green .icon,
+.green .progress {
+    background-color: rgb(34 197 94 / 20%);
 }
