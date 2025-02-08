@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <link rel="stylesheet" href="CSS/framwork.css" />
+        <link rel="stylesheet" href="CSS/master.css" />
+        <title>Settings</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page d-flex">
+            <div class="sidebar bg-white p-20 relative">
+                <h3 class="mt-0 relative txt-c">Awab</h3>
+                <ul>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <spa class="hide-mobile">Dashboard</spa>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span class="hide-mobile">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span class="hide-mobile">Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="project.html">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span class="hide-mobile">Project</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span class="hide-mobile">Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span class="hide-mobile">Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span class="hide-mobile">Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span class="hide-mobile">Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content w-full hidden">
+                <div class="head bg-white p-15 between-flex">
+                    <div class="search relative">
+                        <input class="p-10 b-ccc rad-10" type="search" placeholder="Type A Keyword..." />
+                    </div>
+                    <div class="icons d-flex align-center">
+                        <span class="notification relative">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                        <img src="IMG/avatar.jpg" alt="avatar" />
+                    </div>
+                </div>
+                <h1 class="relative">Settings</h1>
+                <div class="settings-page m-20 d-grid gap-20">
+                    <!-- Start Settings box -->
+                    <div class="p-20 bg-white rad-10">
+                        <h2 class="mt-0 mb-10">Site Control</h2>
+                        <p class="mt-0 c-grey mb-20 fs-15">Control The Website If There Is Maintenance</p>
+                        <div class="mb-15 between-flex">
+                            <div>
+                                <span>Website Control</span>
+                                <p class="c-grey mt-5 mb-0 fs-13">Open/Close Website And Type The Reason</p>
+                            </div>
+                            <div>
+                                <label>
+                                    <input class="toggle-checkbox" type="checkbox" checked />
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <textarea class="close-message b-none p-10 rad-6 d-block w-full" placeholder="Close Message Content"></textarea>
+                    </div>
+                    <!-- End Settings box -->
+                    <div class="p-20 bg-white rad-10">
+                        <h2 class="mt-0 mb-10">General Info</h2>
+                        <p class="mt-0 c-grey mb-20 fs-15">General Information About Your Account</p>
+                        <div class="mb-15">
+                            <label class="fs-14 mb-10 c-grey d-block" for="first">First Name</label>
+                            <input class="b-none p-10 rad-6 d-block w-full b-ccc" type="text" id="first" placeholder="First Name" />
+                        </div>
+                        <div class="mb-15">
+                            <label class="fs-14 mb-10 c-grey d-block" for="last">Last Name</label>
+                            <input class="b-none p-10 rad-6 d-block w-full b-ccc" type="text" id="last" placeholder="Last Name" />
+                        </div>
+                        <div>
+                            <label class="fs-14 mb-10 c-grey d-block" for="mail">Email</label>
+                            <input class="email b-none p-10 rad-6 d-block w-full b-ccc mr-10" value="awaababdelbagi@gmai.com" disabled type="email" id="mail" placeholder="First Name" />
+                            <a class="c-blue" href="#">Change</a>
+                        </div>
+                    </div>
+                    <div class="p-20 bg-white rad-10">
+                        <h2 class="mt-0 mb-10">Security Info</h2>
+                        <p class="mt-0 c-grey mb-20 fs-15">Security Information About Your Account</p>
+                        <div class="sec-box mb-15 between-flex ">
+                            <div>
+                                <span>Password</span>
+                                <p class="c-grey mt-5 mb-0 fs-13">Last Change On 25 - 5 - 2024</p>
+                            </div>
+                            <a class="button bg-blue c-white btn-shape" href="#">Change</a>
+                        </div>
+                        <div class="sec-box mb-15 between-flex ">
+                            <div>
+                                <span>Tow-Factor Authentication</span>
+                                <p class="c-grey mt-5 mb-0 fs-13">Enable/Disable The Factor</p>
+                            </div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" />
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                        <div class="sec-box mb-0 between-flex ">
+                            <div>
+                                <span>Devices</span>
+                                <p class="c-grey mt-5 mb-0 fs-13">Check The Login Devices List</p>
+                            </div>
+                            <a class="bg-eee c-black c-white btn-shape" href="#">Devices</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
