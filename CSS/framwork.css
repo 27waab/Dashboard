@@ -87,6 +87,9 @@
 .mt-15 {
     margin-top: 15px;
 }
+.mb-15 {
+    margin-bottom: 15px;
+}
 .m-20 {
     margin: 20px;
 }
@@ -101,6 +104,9 @@
 }
 .mt-20 {
     margin-top: 20px;
+}
+.m-20 {
+    margin: 20px;
 }
 .mt-25 {
     margin-top: 25px;
@@ -179,7 +185,7 @@
 .b-none {
     border: none;
 }
-.b-1 {
+.b-ccc {
     border: 1px solid #ccc;
 }
 .rad-6 {
