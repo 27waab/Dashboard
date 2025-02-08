@@ -8,6 +8,7 @@
 }
 * {
     box-sizing: border-box;
+    user-select: none;
 }
 body {
     margin: 0;
@@ -496,4 +497,99 @@ ul {
 .social-media .linkedin i,
 .social-media .linkedin a {
     background-color: #0077b5;
+}
+.projects .responsive-table {
+    overflow-x: auto;
+}
+.projects table {
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.projects thead td {
+    background-color: #eee;
+    font-weight: bold;
+}
+.projects table td {
+    padding: 15px;
+    transition: 0.3s;
+}
+.projects tbody td {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.projects table tbody tr td:last-child {
+    border-right: 1px solid #eee;
+}
+.projects tbody tr:hover td {
+    background-color: #faf7f7;
+}
+.projects table img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: #fff;
+}
+.projects table img:not(:first-child) {
+    margin-left: -15px;
+}
+/* Start Settings */
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch {
+    background-color: var(--red-color);
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-switch::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f00d";
+    font-weight: 900;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red-color);
+    transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--green-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--green-color);
+}
+.settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.settings-page .close-message {
+    border: 1px solid #ccc;
+    resize: none;
+    min-height: 150px;
+}
+@media (max-width: 767px) {
+    .settings-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.settings-page .email {
+    display: inline-flex;
+    width: calc(100% - 80px);
 }
