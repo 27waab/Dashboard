@@ -75,6 +75,9 @@
 .mb-5 {
     margin-bottom: 5px;
 }
+.mr-5 {
+    margin-right: 5px;
+}
 .mt-10 {
     margin-right: 10px;
 }
@@ -235,6 +238,7 @@
 .btn-shape {
     padding: 4px 10px;
     border-radius: 6px;
+    cursor: pointer;
 }
 .center-flex {
     display: flex;
