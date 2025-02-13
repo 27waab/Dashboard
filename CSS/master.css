@@ -789,3 +789,179 @@ ul {
         width: 250px;
     }
 }
+@media (max-width: 767px) {
+    .profile-page .other-data {
+        flex-direction: column;
+    }
+}
+.other-data .skills-card {
+    flex-grow: 1;
+}
+.other-data .skills-card ul li {
+    padding: 15px 0;
+}
+.other-data .skills-card ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.other-data .skills-card ul li span {
+    display: inline-flex;
+    padding: 4px 10px;
+    background-color: #eee;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.other-data .skills-card ul li span:not(:last-child) {
+    margin-right: 5px;
+}
+.other-data .activities-card {
+    flex-grow: 2;
+}
+.other-data .activities-card .activity:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.other-data .activities-card .activity img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+@media (min-width: 768px) {
+    .other-data .activities-card .activity .date {
+        margin-left: auto;
+        text-align: right;
+    }
+}
+@media (max-width: 767px) {
+    .other-data .activities-card .activity {
+        flex-direction: column;
+    }
+    .other-data .activities-card .activity img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .other-data .activities-card .activity .date {
+        margin-top: 15px;
+    }
+}
+.project-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+.project-page .project .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.project-page .project h4 {
+    font-weight: normal;
+}
+.project-page .project .team {
+    position: relative;
+    min-height: 80px;
+}
+.project-page .project .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.project-page .project .team a:nth-child(2) {
+    left: 25px;
+}
+.project-page .project .team a:nth-child(3) {
+    left: 50px;
+}
+.project-page .project .team a:nth-child(4) {
+    left: 75px;
+}
+.project-page .project .team a:nth-child(5) {
+    left: 100px;
+}
+.project-page .project .team a:hover {
+    z-index: 1000;
+}
+.project-page .project .team img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.project-page .project .do {
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+.project-page .project .do span {
+    margin-left: 5px;
+    width: fit-content;
+}
+.project-page .project .info {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.project-page .project .info .prog {
+    height: 8px;
+    width: 260px;
+    border-radius: 99999px;
+}
+.project-page .project .info .prog span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 9999999px;
+}
+@media (max-width: 767px) {
+    .project-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+    .project-page .project .do {
+        flex-direction: column;
+    }
+    .project-page .project .do span:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .project-page .project .info {
+        flex-direction: column;
+    }
+    .project-page .project .info .prog {
+        margin-bottom: 15px;
+    }
+}
+.course-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.course-page .course {
+    overflow: hidden;
+}
+.course-page .course .cover {
+    max-width: 100%;
+}
+.course-page .course .instructor {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    border: 5px solid #fff;
+}
+.course-page .course .info {
+    border-top: 1px solid #eee;
+}
+.course-page .course .info .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+    .course-page {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
